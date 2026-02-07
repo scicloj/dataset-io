@@ -9,24 +9,25 @@ file formats out of the box:
 
 # how to use
 
-add this to deps.edn (aprt from tech.ml.dataset or tablecoth):
+Add this to deps.edn (apart from tech.ml.dataset or tablecoth):
 
 ```
-dataset-io/dataset-io 
+scicloj/datase-io {:git/url "https://github.com/scicloj/dataset-io"
+                   :git/sha "xxxx"}
+
 ```
 
-Register handlers, so `->dataset` (TMD)  or `dataset` (tablecloth) can read the file types above.
+The next call register handlers, so that `->dataset` (TMD)  or `dataset` (tablecloth) can read the file types above.
 ```
-(require '[scicloj.dataset-io])
+((requiring-resolve 'scicloj.dataset-io/enable-all-input-formats!))
 ```
 
+So you can do calls like:
 ```
 
 (tablecloth.api/dataset "data/singleSheet.xlsx")
 (tablecloth.api/dataset "/workspaces/tablecloth/data/alldtypes.arrow-feather" {:file-type:arrow})
 (tablecloth/dataset "/workspaces/tablecloth/data/userdata1.parquet")
-
 (tech.v3.libs.fastexcel/workbook->datasets "data/twoSheets.xlsx")
-
 
 ```
