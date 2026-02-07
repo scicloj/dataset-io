@@ -13,7 +13,7 @@ Add this to deps.edn (apart from tech.ml.dataset or tablecoth):
 
 ```
 scicloj/datase-io {:git/url "https://github.com/scicloj/dataset-io"
-                   :git/sha "xxxx"}
+                   :git/sha "752bc3125c9701496a7ac0a2e722254bc349d2e9"}
 
 ```
 
