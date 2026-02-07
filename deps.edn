@@ -1,6 +1,5 @@
 {:deps
  {
-  techascent/tech.ml.dataset {:mvn/version "8.003"}
   com.cognitect/transit-clj {:mvn/version "1.0.333"}
   org.apache.poi/poi-ooxml {:mvn/version "5.2.3"
                             :exclusions [commons-codec/commons-codec]}
