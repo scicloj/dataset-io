@@ -21,7 +21,7 @@
       (bb/run-tests)))
 
 (defn- pom-template [version]
-  [[:description "Machine learning functions for tech.ml.dataset"]
+  [[:description "more fileformats for tech.ml.dataset"]
    [:url "https://github.com/scicloj/dataset-io"]
    [:licenses
     [:license
