@@ -1,3 +1,5 @@
+[![Clojars Project](https://img.shields.io/clojars/v/org.scicloj/dataset-io.svg)](https://clojars.org/org.scicloj/dataset-io)
+
 # dataset-io
 
 This is a (minimal) set of dependencies needed to make tech.ml.dataset and tabelocth be able to use these 
